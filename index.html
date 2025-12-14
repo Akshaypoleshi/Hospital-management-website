@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Multispeciality Hospital</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="nav">
+  <div class="nav-inner container">
+    <a href="index.html" class="brand">Multispeciality Hospital</a>
+
+    <ul class="nav-links">
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="cardiology.html">Departments</a></li>
+      <li><a href="availability.html">Doctor Availability</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <button class="nav-toggle">☰</button>
+  </div>
+</nav>
+
+<!-- HERO SECTION -->
+<header class="hero">
+  <div class="container hero-grid">
+
+    <div class="hero-text">
+      <h1>Advanced Care for a Healthier Tomorrow</h1>
+      <p>
+        Multispeciality Hospital brings together expert doctors and cutting-edge facilities 
+        to provide world-class healthcare for all age groups.
+      </p>
+
+      <div class="hero-actions">
+        <a href="availability.html" class="btn btn-primary">Check Doctors Availability</a>
+        <a href="#departments" class="btn btn-ghost">Explore Departments</a>
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <img src="https://via.placeholder.com/520x330?text=Hospital+Care" alt="Hospital Image">
+    </div>
+
+  </div>
+</header>
+
+<!-- QUICK STATS -->
+<section class="stats container">
+  <div class="stat">
+    <div class="stat-num">150+</div>
+    <div class="stat-label">Specialists</div>
+  </div>
+
+  <div class="stat">
+    <div class="stat-num">24/7</div>
+    <div class="stat-label">Emergency Care</div>
+  </div>
+
+  <div class="stat">
+    <div class="stat-num">Modern</div>
+    <div class="stat-label">Diagnostics</div>
+  </div>
+
+  <div class="stat">
+    <div class="stat-num">Trusted</div>
+    <div class="stat-label">By Thousands</div>
+  </div>
+</section>
+
+<!-- DEPARTMENTS SECTION -->
+<section id="departments" class="section container">
+  <h2 class="section-title">Our Departments</h2>
+  <p class="section-sub">Choose a speciality to view the doctors</p>
+
+  <div class="dept-grid">
+
+    <a href="cardiology.html" class="dept-card">
+    
+      <h3>Cardiology</h3>
+      <p>Heart care & cardiac treatments</p>
+    </a>
+
+    <a href="neurology.html" class="dept-card">
+    
+      <h3>Neurology</h3>
+      <p>Brain, spine & nerve specialists</p>
+    </a>
+
+    <a href="orthopaedics.html" class="dept-card">
+      
+      <h3>Orthopaedics</h3>
+      <p>Bone, joint & spine care</p>
+    </a>
+
+    <a href="pediatrics.html" class="dept-card">
+      
+      <h3>Pediatrics</h3>
+      <p>Child & newborn healthcare</p>
+    </a>
+
+    <a href="dermatology.html" class="dept-card">
+     
+      <h3>Dermatology</h3>
+      <p>Skin, hair & cosmetic solutions</p>
+    </a>
+
+    <a href="generalsurgery.html" class="dept-card">
+      
+      <h3>General Surgery</h3>
+      <p>Advanced surgical care</p>
+    </a>
+
+  </div>
+</section>
+
+<!-- ABOUT US -->
+<section class="about section container">
+  <div class="about-grid">
+    <div>
+      <h2>About Multispeciality Hospital</h2>
+      <p>
+        We are committed to delivering excellence in medical care through compassionate 
+        service, advanced equipment and experienced healthcare professionals.
+      </p>
+
+      <ul class="about-list">
+        <li>Modern operation theatres</li>
+        <li>24x7 emergency & ICU support</li>
+        <li>Fully equipped diagnostic laboratory</li>
+      </ul>
+    </div>
+
+    <div class="about-image">
+      <img src="https://via.placeholder.com/520x320?text=Medical+Team" alt="">
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contact" class="footer">
+  <div class="container footer-grid">
+
+    <div>
+      <h4>Multispeciality Hospital</h4>
+      <p>123 Health Avenue, Your City</p>
+      <p>Emergency: +91 98765 43210</p>
+    </div>
+
+    <div>
+      <h4>Quick Links</h4>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="availability.html">Doctor Availability</a></li>
+        <li><a href="#departments">Departments</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4>Working Hours</h4>
+      <p>Mon – Sat: 8:00 AM – 8:00 PM</p>
+      <p>Emergency & ICU: 24/7</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom container">
+    <small>© <span id="year"></span> Multispeciality Hospital — All Rights Reserved</small>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

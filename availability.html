@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Multispeciality Hospital</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-inner container">
+      <a href="index.html" class="brand">Multispeciality Hospital</a>
+      <ul class="nav-links" role="navigation" aria-label="Primary">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="#departments">Departments</a></li>
+        <li><a href="availability.html">Doctors Availability</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1>Compassionate care. Advanced treatments.</h1>
+        <p>
+          Multispeciality Hospital provides world-class medical care with
+          patient-centred services across specialties. 24x7 emergency care &
+          diagnostics.
+        </p>
+        <p class="hero-actions">
+          <a href="availability.html" class="btn btn-primary">Check Doctors Availability</a>
+          <a href="#departments" class="btn btn-ghost">View Departments</a>
+        </p>
+      </div>
+      <div class="hero-card" aria-hidden="true">
+        <img src="https://via.placeholder.com/520x340?text=Hospital+Care" alt="Hospital building">
+      </div>
+    </div>
+  </header>
+
+  <!-- QUICK STATS -->
+  <section class="stats container">
+    <div class="stat">
+      <div class="stat-num">150+</div>
+      <div class="stat-label">Specialists</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">24/7</div>
+      <div class="stat-label">Emergency</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">Advanced</div>
+      <div class="stat-label">Lab & Imaging</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">Trusted</div>
+      <div class="stat-label">By Thousands</div>
+    </div>
+  </section>
+
+  <!-- DEPARTMENTS -->
+  <section id="departments" class="section container">
+    <h2 class="section-title">Our Departments</h2>
+    <p class="section-sub">Comprehensive specialties to treat every health need.</p>
+
+    <div class="dept-grid">
+      <article class="dept-card">
+        <h3>Cardiology</h3>
+        <p>Heart care, cath lab and cardiac surgery.</p>
+      </article>
+
+      <article class="dept-card">
+        
+        <h3>Orthopaedics</h3>
+        <p>Trauma, joint replacement & spine surgery.</p>
+      </article>
+
+      <article class="dept-card">
+        <h3>Neurology</h3>
+        <p>Stroke care, neuro interventions & rehabilitation.</p>
+      </article>
+
+      <article class="dept-card">
+       
+        <h3>Pediatrics</h3>
+        <p>Comprehensive child health and neonatal care.</p>
+      </article>
+
+      <article class="dept-card">
+      
+        <h3>Dermatology</h3>
+        <p>Skin, hair and cosmetic dermatology services.</p>
+      </article>
+
+      <article class="dept-card">
+       
+        <h3>General Surgery</h3>
+        <p>Minimally invasive & major surgical procedures.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about container section">
+    <div class="about-grid">
+      <div>
+        <h2>About Multispeciality Hospital</h2>
+        <p>
+          We combine experienced clinicians, modern infrastructure and a warm
+          patient-first approach. Our mission is to deliver safe, ethical and
+          effective healthcare to the communities we serve.
+        </p>
+        <ul class="about-list">
+          <li>State-of-the-art diagnostic labs</li>
+          <li>Experienced multidisciplinary teams</li>
+          <li>Patient education & aftercare programs</li>
+        </ul>
+      </div>
+      <div class="about-image" aria-hidden="true">
+        <img src="https://via.placeholder.com/520x320?text=Medical+Team" alt="Medical team">
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contact" class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Multispeciality Hospital</h3>
+        <p>123 Health Avenue, City — Emergency: <strong>+91 98765 43210</strong></p>
+        <p>Email: info@multispecialityhospital.example</p>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="availability.html">Doctors Availability</a></li>
+          <li><a href="#departments">Departments</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Working Hours</h4>
+        <p>Mon – Sat: 8:00 AM – 8:00 PM</p>
+        <p>Emergency & ICU: 24 x 7</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <small>© <span id="yr"></span> Multispeciality Hospital — All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script>
+    // small script: mobile nav toggle + year
+    document.querySelector('.nav-toggle').addEventListener('click', function () {
+      const nav = document.querySelector('.nav-links');
+      const expanded = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', String(!expanded));
+      nav.classList.toggle('open');
+    });
+    document.getElementById('yr').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
